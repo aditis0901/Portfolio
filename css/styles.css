@@ -1,0 +1,458 @@
+.left {
+  display: inline-block;
+  position: absolute;
+  left: 15px;
+  top: 10px;
+  font-family: Garamond;
+  font-style: normal;
+}
+.left img {
+  margin-left: 10px;
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+}
+.tex {
+  color: rgb(210, 223, 213);
+  background-color: rgb(4, 37, 26);
+  opacity: 0.4;
+  padding: 2px;
+  line-height: 15px;
+  border-radius: 10%;
+}
+
+#menu {
+  display: flex;
+  width: 40%;
+  position: fixed;
+  top: 3px;
+  left: 26%;
+    z-index: 2;
+}
+.right {
+  color: black;
+  font-family: garamond;
+  position: absolute;
+  right: 34px;
+  top: 20px;
+  display: inline-block;
+}
+.btn {
+  background-color: darkgray;
+  cursor: pointer;
+}
+
+.btn:hover {
+  text-decoration: underline;
+}
+
+.intropart{
+  display: flex;
+}
+.bg{
+
+  top: 256px;
+  background-color: black;
+  /* left: 459px; */
+  left: 724p;
+  top: 90px;
+  padding: 104px 620px;
+  position: absolute;
+  height: 34vw;
+  opacity: 0.7;
+}
+
+.aboutme{
+  left: 365px;
+  top: 232px;
+  padding: 21px 243px;
+  position: absolute;
+}
+
+.aboutme img{
+ border-radius: 50%;
+ top: -88px;
+position: relative;
+ height: 481px;
+ position: relative;
+ left: 223px;
+ -webkit-border-radius: 50%;
+ -moz-border-radius: 50%;
+ -ms-border-radius: 50%;
+ -o-border-radius: 50%;
+}
+
+.intro {
+  
+  font-family: Secular One;
+  font-size: large;
+  margin: 32px 40px;
+  /* border: 44px; */
+  padding: 2px 136px;
+  text-align: center;
+  display: inline-block;
+  margin-top: 120px;
+  /* margin-bottom: 39px; */
+  padding-top: 60px;
+  /* padding-bottom: 50px; */
+  padding-bottom: 50px;
+  color: rgb(236, 221, 221);
+  border-radius: 10px;
+  background-color: rgb(95, 83, 83);
+  opacity: 0.6;
+
+}
+.inf {
+  text-align: center;
+}
+.forms input {
+  color: black;
+  margin: 10px;
+  width: 250px;
+  text-align: center;
+  padding: 3px;
+}
+.email {
+  font-family: Josefin Sans;
+  text-align: center;
+}
+
+.add{
+  color: rgb(23, 31, 39);
+}
+
+/* quotes */
+
+.wrapper {
+  background-color: #102e4b;
+  background: rgba(90, 94, 62, 0.7);
+  display: grid;
+  place-content: center;
+  font-family: "Oswald", sans-serif;
+  font-size: clamp(0.5rem, 0.5rem + 6vw, 6rem);
+  font-weight: 600;
+  margin-top: 40px;
+  margin-bottom: -86px;
+  text-transform: uppercase;
+  color: var(--text-color);
+}
+
+.wrapper > div {
+  grid-area: 1/1/1/1;
+}
+.top {
+  clip-path: polygon(0% 0%, 100% 0%, 100% 48%, 0% 58%);
+}
+.bottom {
+  clip-path: polygon(0% 60%, 100% 50%, 100% 100%, 0% 100%);
+  color: white;
+  background: -webkit-linear-gradient(177deg, black 53%, var(--text-color) 65%);
+  background: linear-gradient(177deg, black 53%, var(--text-color) 65%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  transform: translateX(0.02em);
+  -webkit-transform: translateX(0.02em);
+  -moz-transform: translateX(0.02em);
+  -ms-transform: translateX(0.02em);
+  -o-transform: translateX(0.02em);
+}
+
+.quote {
+  display: flex;
+  margin-top: 85px;
+  margin-left: 18%;
+}
+.note {
+  margin: 0px -19px;
+  padding: 50px 50px;
+  margin-top: 7%;
+  width: 50px;
+  height: 50px;
+  border: 3px solid grey;
+  box-shadow: 4px 8px 9px 6px;
+  border-radius: 50%;
+  background-color: rgb(207, 200, 191);
+  opacity: 0.76;
+  transition: all 0.2s ease-in-out;
+  font-family: Dancing Script;
+  overflow: hidden;
+}
+.note:hover {
+  background-color: lavender;
+  transform: scale(2);
+}
+
+.note:before {
+  content: "What\0027s Inside? ⍨";
+}
+.note:hover::before {
+  top: 80%;
+  visibility: hidden;
+}
+#note:hover::after {
+  content: "✤ Happiness begins where Ambition ends✤";
+  position: relative;
+  right: 10px;
+  bottom: 70px;
+  font-family: Brush Script MT;
+  font-size: 1rem;
+}
+#note1:hover::after {
+  content: "❆ It\0027s okay not to be okay❆";
+  position: relative;
+  right: 10px;
+  bottom: 50px;
+  /* justify-content: center;  */
+  font-family: Brush Script MT;
+  font-size: 1rem;
+}
+#note2:hover::after {
+  content: "⁂ Trust the Process ⁂";
+  position: relative;
+  right: 10px;
+  bottom: 50px;
+  font-family: Brush Script MT;
+  font-size: 1rem;
+}
+#note3:hover::after {
+  content: "✧ Find comfort in Chaos ✧";
+  position: relative;
+  bottom: 60px;
+  font-family: Brush Script MT;
+  font-size: 1rem;
+}
+#note4:hover::after {
+  content: "❉ Protect your Peace ❉";
+  position: relative;
+  bottom: 60px;
+  font-family: Brush Script MT;
+  font-size: 1rem;
+}
+#note5:hover::after {
+  content: "❆ Create the life you envisioned for ❆";
+  position: relative;
+  bottom: 75px;
+  right: 10px;
+  font-family: Brush Script MT;
+  font-size: 1rem;
+}
+#note6:hover::after {
+  content: "✤ Embrace the adventures of life ✤";
+  position: relative;
+  bottom: 60px;
+  font-family: Brush Script MT;
+  font-size: 1rem;
+}
+hr {
+  height: 3px;
+  color: rebeccapurple;
+  margin-top: 13%;
+}
+.expo {
+  background-color: #102e4b;
+  background: rgba(36, 48, 87, 0.4);
+  display: grid;
+  place-content: center;
+  font-family: "Oswald", sans-serif;
+  font-size: clamp(0.5rem, 0.5rem + 6vw, 6rem);
+  font-weight: 600;
+  margin-top: 29px;
+  margin-bottom: -86px;
+  text-transform: uppercase;
+  padding: 10px;
+  border-radius: 10px;
+  color: var(--text-color);
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+
+.expo > div {
+  grid-area: 1/1/1/1;
+}
+.expo b{
+  color: black;
+  font-size: 4rem;
+  text-decoration: none;
+}
+.about {
+  display: block;
+  border: 20px solid;
+  width: 40%;
+  margin: 575px auto;
+  margin-bottom: 0px;
+  /* background-color: #939dac; */
+  opacity: 0.8;
+}
+.abo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.ex {
+  height: 5px;
+  color: rebeccapurple;
+  margin-top:16vh;
+}
+.fa {
+  margin: 5px;
+  padding: 10px;
+  font-size: 30px;
+  width: 20px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50%;
+}
+.fa:hover {
+  opacity: 0.9;
+}
+
+.fa-facebook {
+  background: #3b5998;
+  color: white;
+}
+.fa-linkedin {
+  background: #0a66c2;
+  color: white;
+}
+
+.fa-google {
+  background: #a53546;
+  color: white;
+}
+.back {
+  border-radius: 10px;
+  margin: -85px 301px;
+  margin-top: -8px;
+  display: block;
+  width: 50%;
+  height: 12px;
+  background-color: rgb(6, 10, 7);
+  padding: 26px;
+  opacity: 0.7;
+  position: fixed;
+  z-index: 2;
+}
+
+p {
+  filter: invert();
+}
+.txt {
+  display: flex;
+  justify-content: center;
+  color: rgb(17, 16, 15);
+  font-family: lora;
+}
+.service{
+  height: 170px;
+}
+
+#part2 {
+ position: absolute;
+  height: 90%;
+ font-family: 'Josefin Sans';
+ font-style: italic;
+  top: 1155px;
+  left: 0px;
+  padding: 13px;
+  z-index: -1;
+}
+#part2 h1 {
+  color: #e3dddd;
+  text-decoration: underline;
+  font-size: 3vw;
+  display: flex;
+  align-items: center;
+  font-family:'Rocher' ;
+}
+/* services boxes */
+.bgbase{
+  background: rgba(30, 41, 46, 0.5);
+  padding: 30px;
+  padding-left: 2px;
+  border-radius: 10px;
+  border-style: groove;
+  border-width: 7px;
+  border-color: rgb(87, 82, 112);
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+/* main info */
+.row{
+  display: flex;
+  margin-top: 100px;
+}
+.colmd4{
+  margin: 23px;
+  width: 33%;
+}
+.cont{
+  padding-left: 30px;
+}
+.cont p{
+  font-size: larger;
+  font-weight: 600;
+}
+.cont h4{
+  margin-top: 0px;
+  font-size: 2.5vw;
+  color: #021532;
+}
+.name{
+  color: #e6d7fc;
+  margin: 20px;
+  font-size: 40px;
+  font-family: 'EB Garamond', serif;
+}
+.work{
+  font-size: larger;
+  font-family: 'Roboto Condensed', sans-serif;
+}
+.buttons button{
+  font-size: 1.2rem;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  margin: 0 20px;
+  background-color: antiquewhite;
+  padding: 6px 14px;
+  border-radius: 10px;
+  border: 4px solid black;
+  cursor: pointer;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  border-style: double;
+}
+.buttons button:hover{
+background-color: rgb(118, 118, 162);
+}
+
+.botn {
+  margin: 10px;
+  border: none;
+  outline: none;
+  border-radius: 20px;
+  font-weight: 700;
+  padding: 10px 40px;
+  background-color: #fefefe;
+  cursor: pointer;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+}
+.botn a{
+  color: black;
+  text-decoration: none;
+}
+/* Style the active class (and buttons on mouse-over) */
+.active, .botn:hover {
+  background-color: #cc9eda;
+  text-decoration: none;
+}
+.containerdata{
+  scroll-behavior: smooth;
+}

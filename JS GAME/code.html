@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BUN-ROCK</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Stylish&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    
+<div class="gamecont">
+    <div class="gameover">LET THE ROCKET TAKE OFF!</div>
+    <div class="bunny animateBunny"></div> 
+    <div id="score">Points: 0</div>
+    <div class="barrier barrierani"></div>
+</div>
+<div class="reload-button-container">
+    <button class="reload-button" onclick="reloadPage()">Play Again</button>
+</div>
+<div class="key-instructions">
+    <h3>*SCORE 20 POINTS TO WIN*</h3>
+    <span class="key">UP </span> to jump <br>
+    <span class="key">RIGHT</span> to move right <br></b>
+    <span class="key">LEFT</span> to move left
+  </div>
+  
+
+<!-- JAVASCRIPT -->
+<script>
+function reloadPage(){
+    location.reload();
+}
+</script>
+
+<script>
+    score = 0;
+    cross = true;
+
+    audio = new Audio('music.mp3');
+    audiogo = new Audio('gameover.mp3');
+    winaud= new Audio('win.mp3');
+    setTimeout(() => {
+        audio.play();
+    }, 1000);
+
+    document.onkeyup = function (e) {
+        if (e.key === 'Enter') {
+            bunny = document.querySelector('.bunny');
+            bunny.classList.add('animateBunny');
+             jump();
+             setTimeout(() => {
+                bunny.classList.remove('animateBunny');
+            }, 900);
+           
+        }
+        if (e.key === 'ArrowRight') {
+            bunny = document.querySelector('.bunny');
+            bunnyx = parseInt(window.getComputedStyle(bunny, null).getPropertyValue('left'));
+            bunny.style.left = bunnyx + 112 + 'px';
+        }
+        if (e.key === 'ArrowUp') {
+            bunny = document.querySelector('.bunny');
+            bunnyx = parseInt(window.getComputedStyle(bunny, null).getPropertyValue('left'));
+        jump();
+        }
+        if (e.key === 'ArrowLeft') {
+            bunny = document.querySelector('.bunny');
+            bunnyx = parseInt(window.getComputedStyle(bunny, null).getPropertyValue('left'));
+            bunny.style.left = bunnyx - 112 + 'px';
+        }
+    };
+    function jump() {
+  let jumpHeight = 200; // Adjust this value to control the jump height
+  let jumpDuration = 1000; // Adjust this value to control the jump duration
+  let jumpStartTime = null;
+
+  function jumpStep(timestamp) {
+    if (!jumpStartTime) jumpStartTime = timestamp;
+    const elapsedTime = timestamp - jumpStartTime;
+    const progress = Math.min(elapsedTime / jumpDuration, 1);
+    const jumpPosition = jumpHeight * Math.sin(progress * Math.PI);
+    bunny.style.bottom = jumpPosition + 75 + 'px';
+
+    if (progress < 1) {
+      window.requestAnimationFrame(jumpStep);
+    }
+  }
+
+  window.requestAnimationFrame(jumpStep);
+}
+function updateScore(score) {
+        scoreCont.innerHTML = 'Points: ' + score;
+        if(score==20){
+            gameOver.innerHTML='YOU WIN!';
+            obstacle.classList.remove('barrierani');
+           winaud.play(); 
+           setTimeout(() => {
+                audiogo.pause();
+                audio.pause();
+            }, 1000);
+            
+        }
+    }
+
+    setInterval(() => {
+        bunny = document.querySelector('.bunny');
+        gameOver = document.querySelector('.gameover');
+        obstacle = document.querySelector('.barrier');
+        scoreCont = document.getElementById('score');
+
+        dx = parseInt(window.getComputedStyle(bunny, null).getPropertyValue('left'));
+        dy = parseInt(window.getComputedStyle(bunny, null).getPropertyValue('top'));
+
+        ox = parseInt(window.getComputedStyle(obstacle, null).getPropertyValue('left'));
+        oy = parseInt(window.getComputedStyle(obstacle, null).getPropertyValue('top'));
+
+        offsetX = Math.abs(dx - ox);
+        offsetY = Math.abs(dy - oy);
+
+        if (offsetX < 73 && offsetY < 52) {
+            gameOver.innerHTML = 'Game Over!';
+            obstacle.classList.remove('barrierani');
+            audiogo.play();
+            setTimeout(() => {
+                audiogo.pause();
+                audio.pause();
+            }, 1000);
+        } else if (offsetX < 145 && cross) {
+            score += 1;
+            updateScore(score);
+            cross = false;
+            setTimeout(() => {
+                cross = true;
+            }, 1000);
+            setTimeout(() => {
+                aniDur = parseFloat(window.getComputedStyle(obstacle, null).getPropertyValue('animation-duration'));
+                newDur = aniDur - 0.1;
+                obstacle.style.animationDuration = newDur + 's';
+                console.log('New animation duration:', newDur);
+            }, 500);
+        }
+    }, 10);
+</script>
+
+</body>
+</html>

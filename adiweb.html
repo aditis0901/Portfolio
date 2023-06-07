@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Project Infinext</title>
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="stylesheet" href=".bootstrap.min.css">
+  <link rel="stylesheet" href=".aos.css">
+  <link rel="stylesheet" href=".line-awesome.min.css">
+  <link rel="stylesheet" href=".style.css">
+  <link rel="stylesheet" href="explore.html">
+</head>
+<style>
+  body {
+    font-family: math;
+    color: rgb(31, 35, 33);
+    /*background-color: rgb(152, 181, 195);*/
+    background: url('flo/dand.jpg') no-repeat;
+    height: 100%;
+    scroll-behavior: smooth;
+  }
+</style>
+
+<body data-spy="scroll" data-target="#menu" data-offset="40">
+<div class="containerdata">
+  <header class="Top" id="top">
+    <div class="back"></div>
+    <div class="left">
+      <img src="flo/logo.png" alt="">
+      <div class="tex">The Infinext</div>
+    </div>
+    <!-- menu bar -->
+    <div id="menu">
+      <button class="botn active"><a href="#top">HOME</a></button>
+      <button class="botn" id="exp" ><a href="explore.html" target="_blank">EXPLORE</a></button>
+      <button class="botn"><a href="#go">QUOTES</a></button>
+      <button class="botn"><a href="#part2"> MORE</a></button>
+    </div>
+
+  </header>
+
+  <div class="intropart">
+    <div class="bg">
+    </div>
+    <div class="aboutme">
+      <img src="flo/adii.jpg" alt="">
+    </div>
+    <div class="intro" id="intro">
+      <div class="hello">Hey there! I am</div>
+      <div class="name" data-aos="fade-up"><b> Aditi Singh </div></b>
+      <div class="work" id="element">Learner, Developer, Content creater, Singer, Artist</div>
+      <p class="add"> I am a student currently persuing my B.Tech in
+        <br> Computer Science and Engineering from
+        NIT DURGAPUR
+      </p>
+      <hr>
+      Let's take our next step towards <br>
+      <div class="inf"><b>'Infinity'</b></div>
+      <div class="email">
+        <h3>✦ Dive in to know me ✦</h3>
+      </div>
+      <div class="buttons">
+        <a href="https://drive.google.com/file/d/13Ds8POupFzXN-pwNj3c_ezx-Ocqsd_DJ/view?usp=sharing" target="bl
+          "> <button> My CV</button></a>
+      </div>
+    </div>
+  </div>
+
+  <div>
+    <section class="wrapper" id="go">
+      <div class="top">~wisdom's Beacon</div>
+      <div class="bottom" aria-hidden="true">~wisdom's Beacon</div>
+    </section>
+    <div class="quote" data-aos="flip-left" id="notes">
+      <div class="note" id="note"></div>
+      <div class="note" id="note1"></div>
+      <div class="note" id="note2"></div>
+      <div class="note" id="note3"></div>
+      <div class="note" id="note4"></div>
+      <div class="note" id="note5"></div>
+      <div class="note" id="note6"></div>
+  </div>   
+  </div>
+
+  <!-- *************SERVICES*************** -->
+ <hr class="ex">
+  <section id="part2" class="exp" style="background-image: url('flo/dande2.jpg') ; height: 60vw; width: 100%;">
+    <h1 class="expo">*E<b>X</b>PERIENCE*</h1>    
+    <div id="servbox" class="serv shadow" data-aos="fade-up">
+      <div class="row">
+        <div class="colmd4">
+          <div class="service bgbase shadow">
+            <div class="icon">
+              <i class="las la-feather"></i>
+            </div>
+            <div class="cont">
+              <h4>WEB DESIGNING</h4>
+              <p>I craft and create delightful websites having an experiences of over a year</p>
+            </div>
+          </div>
+        </div>
+        <div class="colmd4">
+          <div class="service bgbase shadow">
+            <div class="icon">
+              <i class="las la-feather"></i>
+            </div>
+
+            <div class="cont">
+              <h4>MACHINE LEARNING</h4>
+              <p >Machine learning is a lot like it sounds. For more projects and work, <a href="explore.html" target="_blank">click me!</a>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="colmd4">
+          <div class="service bgbase shadow">
+            <div class="icon">
+              <i class="las la-feather"></i>
+            </div>
+            <div class="cont">
+              <h4>LANGUAGES</h4>
+              <p>Programming languages that I've learnt so far: <br><b> C/C++ ,PYTHON, JAVA.</b></p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+</div>
+
+  <!-- CONTACTS -->
+  <footer class="about" id=abut>
+    <div class="abo">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <!-- Add font awesome icons -->
+      <p>✦</p>
+      <a href="https://www.facebook.com/profile.php?id=100060207174217" class="fa fa-facebook" target="_blank"></a>
+      <!-- <a href="#" class="fa fa-google"></a> -->
+      <a href="https://www.linkedin.com/in/aditi-singh-90247916b/" class="fa fa-linkedin" target="b
+      "></a>
+      <p>✦</p>
+    </div>
+    <div class="txt"><b><i>~ Get in Touch ~</i></b> </div>
+
+  </footer>
+
+
+
+
+<!-- JAVASCRIPT -->
+
+  <script>
+    // Add active class to the current button (highlight it)
+    var header = document.getElementById("menu");
+    var btns = header.getElementsByClassName("botn");
+    for (var i = 0; i < btns.length; i++) {
+      btns[i].addEventListener("click", function () {
+        var current = document.getElementsByClassName("active");
+        current[0].className = current[0].className.replace(" active", "");
+        this.className += " active";
+      });
+    }
+  </script>
+  <script>document.addEventListener("DOMContentLoaded", function() {
+    const menuButtons = document.querySelectorAll(".botn");
+    const sections = document.querySelectorAll("section");
+  
+    function activateMenuButton(button) {
+      menuButtons.forEach(function(btn) {
+        btn.classList.remove("active");
+      });
+      button.classList.add("active");
+    }
+  
+    function checkSectionInView() {
+      const scrollPosition = window.scrollY;
+  if (scrollPosition === 0) {
+    activateMenuButton(menuButtons[0]); // Activate the "Home" button
+    return;
+  }
+      sections.forEach(function(section) {
+        const sectionTop = section.offsetTop;
+        const sectionHeight = section.offsetHeight;
+  
+        if (scrollPosition >= sectionTop - 100 && scrollPosition < sectionTop + sectionHeight - 100) {
+          const targetButton = document.querySelector(`.botn a[href="#${section.id}"]`).parentNode;
+          activateMenuButton(targetButton);
+        }
+      });
+      
+    }
+  
+    menuButtons.forEach(function(button) {
+      button.addEventListener("click", function(event) {
+        const targetElement = document.querySelector(this.querySelector("a").getAttribute("href"));
+        if (targetElement) {
+          event.preventDefault();
+          const targetOffsetTop = targetElement.offsetTop;
+          const headerHeight = document.querySelector("header").offsetHeight;
+          const scrollToPosition = targetOffsetTop - headerHeight - 20;
+          window.scrollTo({
+            top: scrollToPosition,
+            behavior: "smooth"
+          });
+        }
+      });
+    });
+  
+    window.addEventListener("scroll", checkSectionInView);
+  });
+  </script>
+  <script>
+  document.addEventListener("DOMContentLoaded", function() {
+  const menuButtons = document.querySelectorAll(".botn");
+
+  menuButtons.forEach(function(button) {
+    button.addEventListener("click", function(event) {
+      const targetElement = document.querySelector(this.querySelector("a").getAttribute("href"));
+      if (targetElement) {
+        event.preventDefault();
+        const targetOffsetTop = targetElement.offsetTop;
+        const headerHeight = document.querySelector("header").offsetHeight;
+        const scrollToPosition = targetOffsetTop - headerHeight - 65; // Adjust the value as needed
+        window.scrollTo({
+          top: scrollToPosition,
+          behavior: "smooth"
+        });
+      }
+    });
+  });
+});
+
+</script>
+  <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    var typed = new Typed('#element', {
+      strings: ['<i>Learner, Developer, Content creater, Singer, Artist</i>'],
+      typeSpeed: 50,
+    });
+  </script>
+  <script>
+    AOS.init();
+  </script>
+    <script src="adi.js"></script>
+
+</body>
+
+</html>

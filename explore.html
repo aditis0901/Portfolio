@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EXPLORE</title>
+</head>
+<style>
+body{
+    background-image: url('back1.jpg');
+    background-size: 100%;
+    margin: 40px;
+    margin-top: 2px;
+}
+
+    @font-face {
+  font-family: 'Rocher';
+  src: url(https://assets.codepen.io/9632/RocherColorGX.woff2);
+}
+
+h1 {
+  font-family: 'Rocher';
+  text-align: center;
+  font-size: 5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+h1 {
+  margin: 0;
+}
+
+@font-palette-values --Mint {
+  font-family: Rocher;
+  base-palette: 7;
+}
+.mint {
+  font-palette: --Mint;
+}
+
+video{
+    position: relative;
+    top: 7vw;
+    border: 2px solid ;
+    background-color: black;
+}
+p{
+    font-size: 1.5rem;
+    font-weight: 600;
+    font-family: 'Stylish';
+    font-style: italic;
+}
+.play{
+    position: absolute;
+    font-size: 30px;
+    padding: 10px;
+    left: 45%;
+    background-color: maroon;
+    color: white;
+    font-family: 'Stylish';
+    border: 2px solid black;
+    top: 140%;
+}
+hr{
+    border: 4px solid rgb(92, 92, 41);
+    border-radius: 60%;
+    width: 55%;
+}
+.vid{
+    position: absolute;
+    top: 50%;
+    left: 33%;
+   
+}
+.down { 
+ background-image: url('road.jpg');
+  display: block;
+  border: 20px solid;
+  width: 40%;
+  margin: 575px auto;
+  margin-bottom: 0px;
+  opacity: 0.8;
+}
+
+
+</style>
+
+
+
+
+<body>
+    <div class="proj">
+        <h1>BUNNY-ROCKET GAME</h1>
+        <hr>
+        <p>Description:</p>
+        <p>This "Bunny-Rocket game" is developed using HTML, CSS, JAVASCRIPT. </p>
+        <p>The game starts with bunny at its initial position and game score as "0". as we overcome one trip of the rocket, the score accordingly increases. Once the bunny touches the rocket, OUCH! THE GAME's OVER!</p>
+        <p >Let's just have a glimpse of the game:-</p>
+            <!-- VIDEO  -->
+        
+    <section class="vid">
+            <video src="Bunrock.mp4" width="500" height="400" style="border: 2px solid;" controls poster="prev.png"></video>
+</section>
+        
+    </div>
+
+<button class="play" id="myButton"><a href="JS GAME\code.html" target="_blank" style="color: aliceblue;"> PLAY GAME!</a></button>
+<div class="down">
+<footer>
+    this is footer
+</footer>
+
+</div>
+</body>
+</html>
